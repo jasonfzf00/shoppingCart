@@ -1,0 +1,102 @@
+html, body{
+  height: 100%;
+}
+
+body{
+    background-color: #f4e5e5;
+}
+
+h2{
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.shopping-container {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  height: 95%;
+}
+
+.inventory-container, .cart-container {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.item {
+    border: 1px solid #ccc;
+    background-color: #d4cbcb;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn, .edit-btn {
+    background-color: #1636c2b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.decrease{
+    background-color: #dc2b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.increase{
+    background-color: #35992c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-btn {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background-color: #393f3c;
+}
